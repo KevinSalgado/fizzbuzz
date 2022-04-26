@@ -1,4 +1,9 @@
 const Reader = require("./lib/utils/reader");
-const explorers = Reader.readJsonFile("explorers.json"); // esto regresa la lista de explorers del archivo
+const ExplorerService = require("./lib/services/ExplorerService");
 
-console.log(explorers);
+const explorers = Reader.readJsonFile("explorers.json");
+//expect(explorers).not.toBeUndefined;
+
+result = ExplorerService.filterByMission(explorers, "node");
+
+console.log(result);
