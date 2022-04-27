@@ -8,11 +8,11 @@ describe("Tests para controllers", () => {
 
   test("2. test de getExplorersUsernamesByMission", () => {
     resul = ExplorerController.getExplorersUsernamesByMission("node");
-    expect(resul).toBe(10);
+    expect(resul).not.toBeUndefined;
   });
 
   test("3 test de getExplorersAmonutByMission", () => {
     resul = ExplorerController.getExplorersAmonutByMission("node");
-    expect(resul).not.toBeUndefined;
+    expect(resul).toBe(10);
   });
 });
