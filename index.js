@@ -9,8 +9,11 @@ result = ExplorerService.filterByMission(explorers, "node");
 
 console.log(result);*/
 
-const explorers = Reader.readJsonFile("explorers.json");
+//const explorers = Reader.readJsonFile("explorers.json");
 //const explorer1 = { name: "Explorer1", score: 1 };
-result = FizzbuzzService.assignFizzBuzz(explorers);
+//result = FizzbuzzService.assignFizzBuzz(explorers);
 
-console.log(result);
+//console.log(result);
+
+const trick = FizzbuzzService.applyValidationInNumber(12);
+console.log(trick);

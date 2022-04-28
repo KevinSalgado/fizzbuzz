@@ -11,8 +11,13 @@ describe("Tests para controllers", () => {
         expect(resul).not.toBeUndefined;
     });
 
-    test("3 test de getExplorersAmonutByMission", () => {
+    test("3. test de getExplorersAmonutByMission", () => {
         resul = ExplorerController.getExplorersAmonutByMission("node");
         expect(resul).toBe(10);
+    });
+
+    test("4. test de getFizzBuzz", () => {
+        resul = ExplorerController.getFizzBuzz(3);
+        expect(resul).toBe("FIZZ");
     });
 });
